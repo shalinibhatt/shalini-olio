@@ -1,12 +1,29 @@
+#contact {
+  background: #ffffff;
+  color: #111827;
+  padding-bottom: 100px;
+}
+
+/* Section spacing block */
+.contact-block {
+  margin-top: 60px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
 /* Email */
 .contact-email {
-  margin-top: 25px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .contact-email a {
-  color: #ffffff;
+  color: #0f172a;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -15,52 +32,49 @@
   color: #7b5cff;
 }
 
-/* Sub description */
-.contact-subtext {
-  margin-top: 12px;
-  font-size: 14px;
-  color: #9ca3af;
-  max-width: 650px;
-  line-height: 1.7;
-}
-
-/* Section labels */
+/* Labels */
 .contact-label {
-  margin-top: 50px;
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #6b7280;
+  color: #94a3b8;
+  margin-bottom: 18px;
 }
 
-/* Links wrapper */
+/* Links container */
 .contact-links {
-  margin-top: 18px;
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 30px;
 }
 
-/* Individual link styling */
+/* Vertical list for writing */
+.contact-links.vertical {
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Links */
 .contact-links a {
-  font-size: 14px;
-  color: #e5e7eb;
+  font-size: 15px;
+  font-weight: 500;
+  color: #334155;
   text-decoration: none;
   position: relative;
-  padding-bottom: 4px;
+  width: fit-content;
   transition: all 0.3s ease;
 }
 
-/* Animated underline */
+/* Subtle underline animation */
 .contact-links a::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -4px;
   width: 0%;
-  height: 1px;
-  background-color: #7b5cff;
+  height: 1.5px;
+  background: #7b5cff;
   transition: width 0.3s ease;
 }
 
@@ -70,4 +84,15 @@
 
 .contact-links a:hover::after {
   width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .contact-links {
+    gap: 20px;
+  }
 }

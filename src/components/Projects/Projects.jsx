@@ -4,32 +4,38 @@ import "./Projects.css";
 
 const projects = [
   {
-    title: "Movie-Wovie",
-    desc: "Basic movie discovery app built with React and REST APIs with search and responsive layout.",
-    tech: ["React", "REST API", "Responsive UI"],
+    title: "Baazigar App",
+    desc: "Customer-facing production mobile application with 1L+ downloads. Contributed to feature development, performance optimization, CI/CD automation, and release management.",
+    tech: ["React Native", "Redux Toolkit", "Firebase", "CI/CD", "Geolocation"],
     status: "Live",
-    link: "https://shalinibhatt.github.io/movie-wovie/",
+    link: "https://play.google.com/store/apps/details?id=com.baaz_baazigar&hl=en_IN",
   },
   {
-    title: "MyJournal",
-    desc: "Basic full-stack CRUD application with authentication and a simple star-rating animation for journal entries.",
-    tech: ["MongoDB", "Express", "React", "Node.js"],
+    title: "Baaz Runner App",
+    desc: "Internal operations app used by field staff for battery swaps and service tracking. Worked on notification handling, rating system, and analytics integration.",
+    tech: [
+      "React Native",
+      "Push Notifications",
+      "Google Analytics",
+      "API Integration",
+      "Role based Authentication",
+    ],
     status: "Live",
-    link: "https://myjournsfe.onrender.com/",
+    link: "https://play.google.com/store/apps/details?id=com.baaz_electorq&hl=en_IN",
   },
   {
-    title: "gogoGames",
-    desc: "AI-powered card game app built with React Native featuring custom shuffle logic, AI-generated backgrounds, and smooth animations.",
-    tech: ["React Native", "State Management", "Animations"],
-    status: "Ongoing",
-  },
+  title: "In a Park. On a Beach",
+  desc: "Freelance SEO-friendly blog platform built with Firebase and Vercel featuring authentication, protected publishing, and dynamic article management.",
+  tech: ["Firebase", "Firestore", "Vercel", "Authentication"],
+  status: "Freelance",
+  link: "https://github.com/zFunx/in-a-park-on-a-beach",
+},
 ];
 
 function Projects() {
   return (
     <SectionWrapper id="projects">
-      <h2 className="section-title">Selected Projects</h2>
-
+      <h2 className="section-title">Projects</h2>
       <div className="projects-grid">
         {projects.map((proj, index) => (
           <motion.div

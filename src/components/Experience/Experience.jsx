@@ -20,7 +20,15 @@ const experiences = [
   },
   {
     role: "Mobile App Development Intern",
-    company: "Poulima Infotech",
+    company: (
+      <a
+        href="https://drive.google.com/file/d/17Pyn2YqLbMZJrej-pS9LMGjqy1ItS2U7/view"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Poulima Infotech
+      </a>
+    ),
     period: "Nov 2023 – Mar 2024",
     highlights: [
       "Built blog, calendar & in-app purchase modules",
@@ -28,8 +36,25 @@ const experiences = [
       "Enhanced UI consistency using Tailwind CSS",
     ],
   },
+  {
+    role: "Software Development Intern",
+    company: (
+      <a
+        href="https://drive.google.com/file/d/18E5CdlcteZkj6CjQfMSyv3Tj3KcqOs53/view"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Deep Thought
+      </a>
+    ),
+    period: "Nov 2022 – Feb 2023",
+    highlights: [
+      "Participated in cross-functional discussions to understand product requirements and development workflows",
+      "Contributed to feature enhancements and development tasks supporting application improvements",
+      "Awarded a technical Letter of Recommendation from Rohini Tech Media Pvt. Ltd. for development contributions",
+    ],
+  },
 ];
-
 function Experience() {
   const ref = useRef(null);
 
@@ -42,7 +67,7 @@ function Experience() {
 
   return (
     <SectionWrapper id="experience">
-      <h2 className="section-title">Professional Experience</h2>
+      <h2 className="section-title">Work Experience</h2>
       <div className="timeline-wrapper" ref={ref}>
         <motion.div className="scroll-indicator" style={{ top: indicatorY }} />
         <div className="timeline-line" />
