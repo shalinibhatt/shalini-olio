@@ -1,0 +1,141 @@
+/* Hero Section */
+.logo {
+  width: 80px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 120px; /* ADD THIS */
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  background: #0f172a;
+  color: white;
+}
+
+/* Glow Background */
+.background-glow {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, #7b5cff40, transparent 70%);
+  filter: blur(140px);
+  animation: floatGlow 8s ease-in-out infinite alternate;
+}
+
+@keyframes floatGlow {
+  from {
+    transform: translate(-60px, -60px);
+  }
+  to {
+    transform: translate(60px, 60px);
+  }
+}
+
+/* Content */
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+/* Small Intro Label */
+.intro {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #7b5cff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Name */
+.name {
+  font-size: clamp(50px, 9vw, 110px);
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.1;
+  background: linear-gradient(90deg, #7b5cff, #00c2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Tagline */
+.tagline {
+  font-size: clamp(16px, 2vw, 22px);
+  margin-top: 30px;
+  color: #cbd5e1;
+  line-height: 1.7;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CTA Buttons */
+.cta-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  padding: 14px 32px;
+  font-size: 15px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Primary */
+.cta-btn.primary {
+  background: linear-gradient(90deg, #7b5cff, #00c2ff);
+  color: white;
+  border: none;
+}
+
+.cta-btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(123, 92, 255, 0.4);
+}
+
+/* Secondary */
+.cta-btn.secondary {
+  border: 1px solid #7b5cff;
+  color: #7b5cff;
+  background: transparent;
+}
+
+.cta-btn.secondary:hover {
+  background: #7b5cff;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tagline {
+    line-height: 1.6;
+  }
+
+  .cta-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-btn {
+    width: 220px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,73 @@
+/* Email */
+.contact-email {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact-email a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-email a:hover {
+  color: #7b5cff;
+}
+
+/* Sub description */
+.contact-subtext {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #9ca3af;
+  max-width: 650px;
+  line-height: 1.7;
+}
+
+/* Section labels */
+.contact-label {
+  margin-top: 50px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+/* Links wrapper */
+.contact-links {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+/* Individual link styling */
+.contact-links a {
+  font-size: 14px;
+  color: #e5e7eb;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Animated underline */
+.contact-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #7b5cff;
+  transition: width 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #7b5cff;
+}
+
+.contact-links a:hover::after {
+  width: 100%;
+}

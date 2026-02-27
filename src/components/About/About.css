@@ -1,0 +1,59 @@
+.about {
+  padding: 30px 10% 120px; /* top right/left bottom */
+  background: #0f172a;
+  color: white;
+  position: relative;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Section Title */
+.about h2 {
+  font-size: clamp(34px, 5vw, 60px);
+  margin-bottom: 40px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #7b5cff, #00c2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Intro Paragraph */
+.about-intro {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #e2e8f0;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+/* Technical Depth */
+.about-details {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #cbd5e1;
+  margin-bottom: 24px;
+}
+
+/* Personal Line */
+.about-personal {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    padding: 80px 8% 100px;
+  }
+
+  .about-intro,
+  .about-details,
+  .about-personal {
+    font-size: 16px;
+  }
+}
