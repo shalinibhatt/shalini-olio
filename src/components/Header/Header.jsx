@@ -51,8 +51,7 @@ function Header() {
 
           <a
             href="/Shalinii_Bhatt_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            download="Shalini_Bhatt_Resume.pdf"
             className="cta-btn secondary"
           >
             Download Resume
